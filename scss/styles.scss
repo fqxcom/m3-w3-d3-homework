@@ -1,10 +1,87 @@
 /* Variables */
+@import "colors";
 
+$primary-font: Arial,Helvetica,Sans-Serif;
+$decor-font:'Sacramento',cursive;
+
+// Global
+* {
+    background-color: $color-html-bg; /*color-html-bg*/
+    font-family: Arial, Helvetica, Sans-Serif;
+}
+
+/* Header and Footer */
+header {
+    margin-left: 70px;
+}
+footer {
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+@import 'nav';
 
 /* Nest Main */
 main {
     width: 1350px;
     min-height:535px;
+    background-color: $color-main-bg; /*color-main-bg*/
+    height: 500px;
+    margin: 20px auto;
+    padding: 1em;
+    width: 95%;
+    display: flex;
+
+    * {
+        background-color: $color-main-ele-bg;
+    }
+
+    #intro-text {
+        background-color: $color-main-ele-bg; /*color-main-ele-bg*/
+        height: 100%;
+        width: 40%;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        span {
+        font-family: 'Sacramento', cursive;
+        font-size:1.5em;
+    }
+    h3 {
+        font-size:2em;
+    }
+     .submit-buttton {
+        background-color: $color-btn-bg; /*color-btn-bg*/
+        height: 40px;
+        border: none;
+    
+    }
+    }
+    
+  
+    #intro-image {
+        height: 100%;
+        width: 60%; 
+        position: relative;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    }
+    
+
 }
 
 // Mixin or Extend for button
+@mixin important-text {
+    color: $color-btn-txt;
+    font-size: 15px;
+    margin:2em;
+  }
+  
+  .submit-buttton {
+    @include important-text;
+  }

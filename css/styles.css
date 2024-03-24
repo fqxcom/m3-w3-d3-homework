@@ -1,0 +1,91 @@
+/* Variables */
+* {
+  background-color: #daaa0e;
+  /*color-html-bg*/
+  font-family: Arial, Helvetica, Sans-Serif;
+}
+
+/* Header and Footer */
+header {
+  margin-left: 70px;
+}
+
+footer {
+  margin-top: 20px;
+  margin-left: 70px;
+}
+
+/* Nest Nav */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  color: white;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: white;
+}
+
+/* Nest Main */
+main {
+  width: 1350px;
+  min-height: 535px;
+  background-color: white;
+  /*color-main-bg*/
+  height: 500px;
+  margin: 20px auto;
+  padding: 1em;
+  width: 95%;
+  display: flex;
+}
+main * {
+  background-color: #d4d5d8;
+}
+main #intro-text {
+  background-color: #d4d5d8;
+  /*color-main-ele-bg*/
+  height: 100%;
+  width: 40%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+main #intro-text span {
+  font-family: "Sacramento", cursive;
+  font-size: 1.5em;
+}
+main #intro-text h3 {
+  font-size: 2em;
+}
+main #intro-text .submit-buttton {
+  background-color: #daaa0e;
+  /*color-btn-bg*/
+  height: 40px;
+  border: none;
+}
+main #intro-image {
+  height: 100%;
+  width: 60%;
+  position: relative;
+}
+main #intro-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.submit-buttton {
+  color: white;
+  font-size: 15px;
+  margin: 2em;
+}
+
+/*# sourceMappingURL=styles.css.map */
